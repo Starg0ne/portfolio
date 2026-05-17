@@ -6,11 +6,11 @@
 -->
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projets — Bastien Ham</title>
+  <title>Projects — Bastien Ham</title>
   <link rel="stylesheet" href="styles/style.css" />
   <link rel="stylesheet" href="styles/projets.css" />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
@@ -19,17 +19,17 @@
 
   <!-- Navigation -->
   <nav class="nav" id="nav">
-    <a href="index.html" class="nav-logo">BH<span class="dot">.</span></a>
+    <a href="index-en.html" class="nav-logo">BH<span class="dot">.</span></a>
     <ul class="nav-links">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="projets.html" class="active">Projets</a></li>
-      <li><a href="formation.html">Formation</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-      <li><a href="initiative.html">Initiatives</a></li>
+      <li><a href="index-en.html">Home</a></li>
+      <li><a href="projets-en.html" class="active">Projects</a></li>
+      <li><a href="formation-en.html">Education</a></li>
+      <li><a href="index-en.html#contact">Contact</a></li>
+      <li><a href="initiative-en.html">Initiatives</a></li>
     </ul>
     <ul class="nav-btn">
-    <a href="projets-en.html" class="btn-nav">EN</a>
-    <a href="index.html#cv" class="btn-nav">CV</a>
+    <a href="projets.html" class="btn-nav">FR</a>
+    <a href="index-en.html#cv" class="btn-nav">CV</a>
     </ul>
     <button class="burger" id="burger" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -43,10 +43,10 @@
       <div class="grid-overlay"></div>
     </div>
     <div class="container">
-      <p class="section-label reveal">/ Projets</p>
-      <h1 class="section-title reveal">Mes <span class="accent">projets</span></h1>
+      <p class="section-label reveal">/ Projects</p>
+      <h1 class="section-title reveal">My <span class="accent">projects</span></h1>
       <p class="page-hero-sub reveal">
-        Des projets de cours, des concours, des trucs perso — tout ce sur quoi j'ai mis les mains.
+        Course projects, competitions, personal stuff — everything I've put my hands on.
       </p>
     </div>
   </section>
@@ -55,11 +55,11 @@
   <section class="filter-bar">
     <div class="container">
       <div class="filters">
-        <button class="filter-btn active" data-filter="all">Tout</button>
-        <button class="filter-btn" data-filter="jeu">Jeu</button>
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="jeu">Game</button>
         <button class="filter-btn" data-filter="web">Web</button>
-        <button class="filter-btn" data-filter="perso">Perso</button>
-        <button class="filter-btn" data-filter="cours">Cours</button>
+        <button class="filter-btn" data-filter="perso">Personal</button>
+        <button class="filter-btn" data-filter="cours">Coursework</button>
       </div>
     </div>
   </section>
@@ -72,34 +72,34 @@
       <article class="project-full featured" data-cat="jeu perso" id="billard">
         <div class="project-full-header">
           <div>
-            <div class="project-badge">🏆 Lauréat Territorial · Trophées NSI</div>
-            <h2>Jeu de billard 2D</h2>
+            <div class="project-badge">🏆 Regional Winner · NSI Trophies</div>
+            <h2>2D Billiards Game</h2>
             <div class="project-year-tag">2025 · Lycée Louis Bascan, Rambouillet</div>
           </div>
-          <div class="project-status done">Terminé</div>
+          <div class="project-status done">Completed</div>
         </div>
         <div class="project-full-body">
           <p>
-            Développé en Python avec Pygame dans le cadre du concours national <strong>Trophées NSI</strong> — 
-            niveau Terminale. Projet d'équipe : conception de l'interface graphique, système d'affichage et 
-            implémentation de la physique des collisions et des rebonds pour un gameplay réaliste et fluide.
+            Developed in Python with Pygame as part of the national <strong>NSI Trophies</strong> competition —
+            high school level. Team project: graphical interface design, display system and
+            implementation of collision and bounce physics for realistic, smooth gameplay.
           </p>
           <p>
-            Résultat : <strong>Lauréat Territorial</strong> et <strong>Prix Meilleur Projet niveau Terminale</strong>. 
-            Premier vrai projet Python complet, premier concours de programmation, le tout en équipe.
+            Result: <strong>Regional Winner</strong> and <strong>Best Project Award at High School Level</strong>.
+            First complete Python project, first programming competition, all done as a team.
           </p>
           <div class="project-details">
             <div class="detail-item">
               <span class="detail-label">Stack</span>
-              <div class="project-tags"><span>Python</span><span>Pygame</span><span>POO</span></div>
+              <div class="project-tags"><span>Python</span><span>Pygame</span><span>OOP</span></div>
             </div>
             <div class="detail-item">
-              <span class="detail-label">Équipe</span>
-              <span class="detail-val">Projet d'équipe (groupe)</span>
+              <span class="detail-label">Team</span>
+              <span class="detail-val">Team project (group)</span>
             </div>
             <div class="detail-item">
-              <span class="detail-label">Durée</span>
-              <span class="detail-val">Plusieurs semaines</span>
+              <span class="detail-label">Duration</span>
+              <span class="detail-val">Several weeks</span>
             </div>
           </div>
           <a href="https://github.com/Daith-42/billard-game-ultimate-python-project" target="_blank" class="btn-ghost" >
@@ -112,20 +112,20 @@
       <article class="project-full" data-cat="jeu perso" id="cgj">
         <div class="project-full-header">
           <div>
-            <h2>Prototype de jeu — Code Game Jam</h2>
+            <h2>Game Prototype — Code Game Jam</h2>
             <div class="project-year-tag">2026 · IUT d'Orsay</div>
           </div>
-          <div class="project-status done">Terminé</div>
+          <div class="project-status done">Completed</div>
         </div>
         <div class="project-full-body">
           <p>
-            Participation à la <strong>Code Game Jam</strong> : prototype de jeu développé en équipe de 5 
-            en <strong>30 heures</strong> sur Godot. Conception du gameplay, développement des 
-            mécaniques de jeu et livraison d'un prototype fonctionnel dans les délais imposés.
+            Participated in the <strong>Code Game Jam</strong>: game prototype developed as a team of 5
+            in <strong>30 hours</strong> on Godot. Gameplay design, game mechanics development
+            and delivery of a working prototype within the time limit.
           </p>
           <p>
-            Gestion de la pression du temps, coordination d'équipe, décisions techniques rapides. Une expérience 
-            qui apprend autant en soft skills qu'en code.
+            Managing time pressure, team coordination, fast technical decisions. An experience that
+            teaches as much in soft skills as in code.
           </p>
           <div class="project-details">
             <div class="detail-item">
@@ -133,12 +133,12 @@
               <div class="project-tags"><span>Godot</span><span>GDScript</span></div>
             </div>
             <div class="detail-item">
-              <span class="detail-label">Équipe</span>
-              <span class="detail-val">5 personnes</span>
+              <span class="detail-label">Team</span>
+              <span class="detail-val">5 people</span>
             </div>
             <div class="detail-item">
-              <span class="detail-label">Durée</span>
-              <span class="detail-val">30 heures</span>
+              <span class="detail-label">Duration</span>
+              <span class="detail-val">30 hours</span>
             </div>
           </div>
           <a href="https://github.com/arya-allermoz/CGJ-Ubuntu-Cheval" target="_blank" class="btn-ghost" >
@@ -152,18 +152,18 @@
         <div class="project-full-header">
           <div>
             <h2>Portfolio — GitHub Pages</h2>
-            <div class="project-year-tag">2026 · Projet perso</div>
+            <div class="project-year-tag">2026 · Personal project</div>
           </div>
-          <div class="project-status inprogress">En cours</div>
+          <div class="project-status inprogress">In progress</div>
         </div>
         <div class="project-full-body">
           <p>
-            Ce portfolio — conçu et codé en HTML/CSS/JS. 
-            Design responsive, animations CSS, palette sombre / rose / pourpre, multi-pages.
-            Hébergé sur GitHub Pages.
+            This portfolio — designed and coded in HTML/CSS/JS.
+            Responsive design, CSS animations, dark / pink / purple color scheme, multi-page.
+            Hosted on GitHub Pages.
           </p>
           <p>
-            Objectif : avoir un endroit propre pour montrer mon travail et accompagner ma recherche d'alternance.
+            Goal: have a clean place to showcase my work and support my search for a work-study contract.
           </p>
           <div class="project-details">
             <div class="detail-item">
@@ -171,7 +171,7 @@
               <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
             </div>
             <div class="detail-item">
-              <span class="detail-label">Hébergement</span>
+              <span class="detail-label">Hosting</span>
               <span class="detail-val">GitHub Pages</span>
             </div>
           </div>
@@ -190,7 +190,7 @@
             <h2>ComWave WebSite Project</h2>
             <div class="project-year-tag">2026 · Projet IUT</div>
           </div>
-          <div class="project-status done">Terminé</div>
+          <div class="project-status done">Completed</div>
         </div>
         <div class="project-full-body">
           <p>
@@ -216,18 +216,18 @@
       <article class="project-full placeholder" data-cat="perso">
         <div class="project-full-header">
           <div>
-            <h2>Projets perso à venir 🔧</h2>
-            <div class="project-year-tag">En cours / à venir</div>
+            <h2>Upcoming Personal Projects 🔧</h2>
+            <div class="project-year-tag">In progress / upcoming</div>
           </div>
-          <div class="project-status inprogress">À venir</div>
+          <div class="project-status inprogress">Coming soon</div>
         </div>
         <div class="project-full-body">
           <p class="placeholder-text">
-            D'autres projets perso sont en préparation et seront ajoutés ici. 
-            Jeux, outils, expériences Unity / Godot...
+            More personal projects are in the works and will be added here.
+            Games, tools, Unity / Godot experiments...
           </p>
           <p style="color: var(--text-dim); font-family: 'Space Mono', monospace; font-size: 0.8rem;">
-            → Section mise à jour régulièrement.
+            → Section updated regularly.
           </p>
         </div>
       </article>
@@ -239,11 +239,11 @@
   <section class="projects-cta">
     <div class="container">
       <div class="cta-inner">
-        <h2>Vous avez un <span class="accent">projet ?</span></h2>
-        <p>Je cherche une alternance à partir de septembre 2026. Si vous cherchez quelqu'un de motivé, curieux et qui apprend vite — on peut en parler.</p>
+        <h2>Got a <span class="accent">project?</span></h2>
+        <p>I'm looking for a work-study contract starting September 2026. If you're looking for someone motivated, curious and who picks things up fast — let's talk.</p>
         <div class="cta-btns">
-          <a href="index.html#contact" class="btn-primary">Me contacter</a>
-          <a href="https://github.com/Starg0ne" target="_blank" class="btn-ghost">Mon GitHub</a>
+          <a href="index-en.html#contact" class="btn-primary">Contact me</a>
+          <a href="https://github.com/Starg0ne" target="_blank" class="btn-ghost">My GitHub</a>
         </div>
       </div>
     </div>

@@ -122,6 +122,10 @@ img { max-width: 100%; display: block; }
   color: var(--accent);
   transition: all var(--transition);
 }
+.nav-btn {
+  display: flex;
+  gap: 2rem;
+}
 .btn-nav:hover {
   background: var(--accent);
   color: var(--bg);
@@ -500,23 +504,6 @@ img { max-width: 100%; display: block; }
 .lang-level {
   font-family: 'Space Mono', monospace;
   font-size: 0.75rem;
-  color: var(--accent);
-}
-.softskills {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-.softskills li {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  padding-left: 1rem;
-  position: relative;
-}
-.softskills li::before {
-  content: '→';
-  position: absolute;
-  left: 0;
   color: var(--accent);
 }
 
