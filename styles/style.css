@@ -884,3 +884,6 @@ img { max-width: 100%; display: block; }
     gap: 1.5rem;
   }
 }
+#cv {
+  scroll-margin-top: 250px;
+}
