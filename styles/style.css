@@ -124,7 +124,9 @@ img { max-width: 100%; display: block; }
 }
 .nav-btn {
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  gap: 0.8rem;
+  list-style: none;
 }
 .btn-nav:hover {
   background: var(--accent);
@@ -761,14 +763,15 @@ img { max-width: 100%; display: block; }
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 70px; left: 0; right: 0;
+    top: 65px; left: 0; right: 0;
     background: var(--bg2);
     padding: 2rem;
     gap: 1.5rem;
     border-bottom: 1px solid var(--border);
     z-index: 99;
   }
-  .btn-nav { display: none; }
+  .btn-cv { display: none; }
+  .btn-lang { display :flex; }
   .burger { display: flex; }
   .skills-grid { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
