@@ -1,0 +1,263 @@
+<!-- 
+ projets.html
+ Réalisé par Bastien Ham 
+
+ Dernière update : 17/05/2026
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projets — Bastien Ham</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/projets.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">BH<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="projets.html" class="active">Projets</a></li>
+      <li><a href="formation.html">Formation</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="initiative.html">Initiatives</a></li>
+    </ul>
+    <a href="index.html#cv" class="btn-nav">CV</a>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Bannière -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <div class="blob blob3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container">
+      <p class="section-label reveal">/ Projets</p>
+      <h1 class="section-title reveal">Mes <span class="accent">projets</span></h1>
+      <p class="page-hero-sub reveal">
+        Des projets de cours, des concours, des trucs perso — tout ce sur quoi j'ai mis les mains.
+      </p>
+    </div>
+  </section>
+
+  <!-- Filtre -->
+  <section class="filter-bar">
+    <div class="container">
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Tout</button>
+        <button class="filter-btn" data-filter="jeu">Jeu</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="perso">Perso</button>
+        <button class="filter-btn" data-filter="cours">Cours</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Liste des projets -->
+  <section class="projects-full">
+    <div class="container">
+
+      <!-- Billard Ultimate -->
+      <article class="project-full featured" data-cat="jeu perso" id="billard">
+        <div class="project-full-header">
+          <div>
+            <div class="project-badge">🏆 Lauréat Territorial · Trophées NSI</div>
+            <h2>Jeu de billard 2D</h2>
+            <div class="project-year-tag">2025 · Lycée Louis Bascan, Rambouillet</div>
+          </div>
+          <div class="project-status done">Terminé</div>
+        </div>
+        <div class="project-full-body">
+          <p>
+            Développé en Python avec Pygame dans le cadre du concours national <strong>Trophées NSI</strong> — 
+            niveau Terminale. Projet d'équipe : conception de l'interface graphique, système d'affichage et 
+            implémentation de la physique des collisions et des rebonds pour un gameplay réaliste et fluide.
+          </p>
+          <p>
+            Résultat : <strong>Lauréat Territorial</strong> et <strong>Prix Meilleur Projet niveau Terminale</strong>. 
+            Premier vrai projet Python complet, premier concours de programmation, le tout en équipe.
+          </p>
+          <div class="project-details">
+            <div class="detail-item">
+              <span class="detail-label">Stack</span>
+              <div class="project-tags"><span>Python</span><span>Pygame</span><span>POO</span></div>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Équipe</span>
+              <span class="detail-val">Projet d'équipe (groupe)</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Durée</span>
+              <span class="detail-val">Plusieurs semaines</span>
+            </div>
+          </div>
+          <a href="https://github.com/Daith-42/billard-game-ultimate-python-project" target="_blank" class="btn-ghost" >
+            GitHub →
+          </a>
+        </div>
+      </article>
+
+      <!-- CODE GAME JAM -->
+      <article class="project-full" data-cat="jeu perso" id="cgj">
+        <div class="project-full-header">
+          <div>
+            <h2>Prototype de jeu — Code Game Jam</h2>
+            <div class="project-year-tag">2026 · IUT d'Orsay</div>
+          </div>
+          <div class="project-status done">Terminé</div>
+        </div>
+        <div class="project-full-body">
+          <p>
+            Participation à la <strong>Code Game Jam</strong> : prototype de jeu développé en équipe de 5 
+            en <strong>30 heures chrono</strong> sur Godot. Conception du gameplay, développement des 
+            mécaniques de jeu et livraison d'un prototype fonctionnel dans les délais imposés.
+          </p>
+          <p>
+            Gestion de la pression du temps, coordination d'équipe, décisions techniques rapides. Une expérience 
+            qui apprend autant en soft skills qu'en code.
+          </p>
+          <div class="project-details">
+            <div class="detail-item">
+              <span class="detail-label">Stack</span>
+              <div class="project-tags"><span>Godot</span><span>GDScript</span></div>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Équipe</span>
+              <span class="detail-val">5 personnes</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Durée</span>
+              <span class="detail-val">30 heures</span>
+            </div>
+          </div>
+          <a href="https://github.com/arya-allermoz/CGJ-Ubuntu-Cheval" target="_blank" class="btn-ghost" >
+            GitHub →
+          </a>
+        </div>
+      </article>
+
+      <!-- PORTFOLIO -->
+      <article class="project-full" data-cat="web perso" id="portfolio">
+        <div class="project-full-header">
+          <div>
+            <h2>Portfolio — GitHub Pages</h2>
+            <div class="project-year-tag">2026 · Projet perso</div>
+          </div>
+          <div class="project-status inprogress">En cours</div>
+        </div>
+        <div class="project-full-body">
+          <p>
+            Ce portfolio — conçu et codé en HTML/CSS/JS. 
+            Design responsive, animations CSS, palette sombre / rose / pourpre, multi-pages.
+            Hébergé sur GitHub Pages.
+          </p>
+          <p>
+            Objectif : avoir un endroit propre pour montrer mon travail et accompagner ma recherche d'alternance.
+          </p>
+          <div class="project-details">
+            <div class="detail-item">
+              <span class="detail-label">Stack</span>
+              <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Hébergement</span>
+              <span class="detail-val">GitHub Pages</span>
+            </div>
+          </div>
+          <a href="https://github.com/Starg0ne/portfolio" target="_blank" class="btn-ghost">
+            GitHub →
+          </a>
+        </div>
+      </article>
+
+
+
+      <!-- ComWave Web project -->
+      <article class="project-full" data-cat="web cours" id="portfolio">
+        <div class="project-full-header">
+          <div>
+            <h2>ComWave WebSite Project</h2>
+            <div class="project-year-tag">2026 · Projet IUT</div>
+          </div>
+          <div class="project-status done">Terminé</div>
+        </div>
+        <div class="project-full-body">
+          <p>
+            Coming soon
+          </p>
+          <p>
+            Coming soon
+          </p>
+          <div class="project-details">
+            <div class="detail-item">
+              <span class="detail-label">Stack</span>
+              <div class="project-tags"><span>HTML</span><span>CSS</span></div>
+            </div>
+          </div>
+          <a href="https://github.com/Starg0ne/ComWaveWebSite" target="_blank" class="btn-ghost">
+            GitHub →
+          </a>
+        </div>
+      </article>
+
+
+      <!-- Autre -->
+      <article class="project-full placeholder" data-cat="perso">
+        <div class="project-full-header">
+          <div>
+            <h2>Projets perso à venir 🔧</h2>
+            <div class="project-year-tag">En cours / à venir</div>
+          </div>
+          <div class="project-status inprogress">À venir</div>
+        </div>
+        <div class="project-full-body">
+          <p class="placeholder-text">
+            D'autres projets perso sont en préparation et seront ajoutés ici. 
+            Jeux, outils, expériences Unity / Godot...
+          </p>
+          <p style="color: var(--text-dim); font-family: 'Space Mono', monospace; font-size: 0.8rem;">
+            → Section mise à jour régulièrement.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="projects-cta">
+    <div class="container">
+      <div class="cta-inner">
+        <h2>Vous avez un <span class="accent">projet ?</span></h2>
+        <p>Je cherche une alternance à partir de septembre 2026. Si vous cherchez quelqu'un de motivé, curieux et qui apprend vite — on peut en parler.</p>
+        <div class="cta-btns">
+          <a href="index.html#contact" class="btn-primary">Me contacter</a>
+          <a href="https://github.com/Starg0ne" target="_blank" class="btn-ghost">Mon GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="nav-logo">BH<span class="dot">.</span></span>
+      <p>Bastien Ham · 2026</p>
+      <div class="footer-links">
+        <a href="https://github.com/Starg0ne" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/bastien-ham-fr/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

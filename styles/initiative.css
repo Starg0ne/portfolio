@@ -1,0 +1,156 @@
+/* 
+Fomartion.css
+Réalisé par Bastien Ham
+
+Dernière update : 16/05/2026
+*/
+
+/* --- A FAIRE ---
+  - DRY                                                                                                                                                  
+*/
+
+/* ---- ALTERNANCE BANNER ---- */
+.alternance-banner {
+  background: var(--bg3);
+  border-bottom: 1px solid var(--border);
+  padding: 1.5rem 0;
+  margin-top: 70px; /* compense la nav fixe */
+}
+.banner-inner {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.banner-dot {
+  width: 10px; height: 10px;
+  background: #4ade80;
+  border-radius: 50%;
+  flex-shrink: 0;
+  animation: pulse 2s infinite;
+  box-shadow: 0 0 12px rgba(74, 222, 128, 0.5);
+}
+.banner-inner strong { display: block; font-size: 1rem; font-weight: 700; margin-bottom: 0.2rem; }
+.banner-inner p { font-size: 0.82rem; color: var(--text-muted); font-family: 'Space Mono', monospace; }
+.banner-inner .btn-primary { margin-left: auto; flex-shrink: 0; }
+
+/* ---- PAGE HERO ---- */
+.page-hero {
+  padding: 9rem 0 5rem;
+  position: relative;
+  overflow: hidden;
+  background: var(--bg);
+}
+.page-hero-bg { position: absolute; inset: 0; z-index: 0; }
+.page-hero .container { position: relative; z-index: 1; }
+.page-hero-sub {
+  max-width: 580px;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-top: -0.5rem;
+}
+
+/* ---- INITIATIVE SECTION ---- */
+.initiative-section {
+  padding: 5rem 0 7rem;
+  background: var(--bg2);
+}
+
+/* ---- GRID ---- */
+.initiative-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+/* ---- TEXTE ---- */
+.initiative-text p {
+  color: var(--text-muted);
+  font-size: 0.98rem;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+}
+.initiative-text p strong { color: var(--text); }
+
+.initiative-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+.meta-tag {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  font-size: 0.88rem;
+}
+.meta-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  min-width: 110px;
+  flex-shrink: 0;
+}
+.meta-tag span:last-child { color: var(--text-muted); }
+
+/* ---- VISUELS ---- */
+.initiative-visuals {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  position: sticky;
+  top: 120px;
+}
+
+.logo-block {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.u21-logo {
+  max-width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+}
+
+.certif-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.certif-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.certif-img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.certif-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 50px rgba(224, 85, 138, 0.2);
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 900px) {
+  .initiative-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .initiative-visuals { position: static; }
+}
+@media (max-width: 600px) {
+  .banner-inner .btn-primary { width: 100%; text-align: center; }
+}

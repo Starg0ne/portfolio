@@ -1,0 +1,225 @@
+/* 
+Fomartion.css
+Réalisé par Bastien Ham
+
+Dernière update : 16/05/2026
+*/
+
+/* --- A FAIRE ---
+  - DRY                                                                                                                                                  
+*/
+.timeline-section {
+  padding: 5rem 0 7rem;
+  background: var(--bg);
+}
+
+
+/* ---- HERO ---- */
+.page-hero {
+  padding: 9rem 0 5rem;
+  position: relative;
+  overflow: hidden;
+  background: var(--bg);
+}
+.page-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.page-hero .container {
+  position: relative;
+  z-index: 1;
+}
+.page-hero-sub {
+  max-width: 580px;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-top: -0.5rem;
+}
+
+/* ---- ALTERNANCE BANNER ---- */
+.alternance-banner {
+  background: var(--bg3);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 1.5rem 0;
+}
+.banner-inner {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.banner-dot {
+  width: 10px; height: 10px;
+  background: #4ade80;
+  border-radius: 50%;
+  flex-shrink: 0;
+  animation: pulse 2s infinite;
+  box-shadow: 0 0 12px rgba(74, 222, 128, 0.5);
+}
+.banner-inner strong {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+.banner-inner p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-family: 'Space Mono', monospace;
+}
+.banner-inner .btn-primary {
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+/* ---- TIMELINE LAYOUT ---- */
+.timeline-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+.timeline-col {
+  position: relative;
+}
+
+/* ---- TIMELINE ---- */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 8px;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, var(--accent), transparent);
+  opacity: 0.4;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+.timeline-item:last-child { margin-bottom: 0; }
+.tl-dot {
+  position: absolute;
+  left: -2.5rem;
+  top: 6px;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--bg3);
+  border: 2px solid var(--text-dim);
+  transition: all var(--transition);
+}
+.tl-dot.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 14px rgba(224,85,138,0.6);
+  animation: pulse 2s infinite;
+}
+.timeline-item.future .tl-dot {
+  background: transparent;
+  border-color: var(--accent);
+  border-style: dashed;
+  opacity: 0.6;
+}
+.timeline-item.future .tl-content {
+  opacity: 0.65;
+}
+.tl-date {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.badge-current {
+  background: rgba(224,85,138,0.15);
+  color: var(--rose);
+  border: 1px solid rgba(224,85,138,0.3);
+  padding: 0.15rem 0.5rem;
+  border-radius: 100px;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+}
+.tl-content h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+.tl-place {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  margin-bottom: 0.7rem;
+}
+.tl-content p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 0.8rem;
+}
+.tl-content p strong { color: var(--text); }
+.tl-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.tl-tags span {
+  font-size: 0.7rem;
+  font-family: 'Space Mono', monospace;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  color: var(--text-muted);
+}
+
+/* ---- CERTIFICATION ---- */
+.certif-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  margin-top: 1rem;
+}
+.certif-icon { font-size: 2.2rem; flex-shrink: 0; }
+.certif-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; }
+.certif-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; }
+.certif-case2 {
+  margin-left: auto;
+  font-family: 'Space Mono', monospace;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+.certif-score span {
+  font-size: 1rem;
+  color: var(--text-dim);
+}
+
+/* ---- RÉFÉRENT ---- */
+.referent-block p {
+  margin-top: 0.5rem;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 900px) {
+  .timeline-cols { grid-template-columns: 1fr; gap: 3rem; }
+}
+@media (max-width: 600px) {
+  .certif-card { flex-direction: column; text-align: center; }
+  .certif-score { margin-left: 0; }
+  .banner-inner .btn-primary { width: 100%; text-align: center; }
+}

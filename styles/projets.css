@@ -1,0 +1,215 @@
+/* 
+projet.css
+Réalisé par Bastien Ham
+
+Dernière update : 16/05/2026
+*/
+
+/* --- A FAIRE ---
+  - DRY                                                                                                                                                  
+*/
+
+/* ---- PAGE HERO ---- */
+.page-hero {
+  padding: 9rem 0 5rem;
+  position: relative;
+  overflow: hidden;
+  background: var(--bg);
+}
+.page-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.page-hero .container {
+  position: relative;
+  z-index: 1;
+}
+.page-hero-sub {
+  max-width: 580px;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-top: -0.5rem;
+}
+
+/* ---- FILTER BAR ---- */
+.filter-bar {
+  padding: 2rem 0;
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 70px;
+  z-index: 50;
+  backdrop-filter: blur(12px);
+}
+.filters {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+.filter-btn {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.78rem;
+  padding: 0.45rem 1.1rem;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition);
+  letter-spacing: 0.05em;
+}
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--gradient);
+  color: #fff;
+  border-color: transparent;
+}
+
+/* ---- PROJECTS FULL LIST ---- */
+.projects-full {
+  padding: 4rem 0 6rem;
+  background: var(--bg);
+}
+.projects-full .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* ---- PROJECT FULL CARD ---- */
+.project-full {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2.5rem;
+  transition: all var(--transition);
+  opacity: 1;
+  transform: translateY(0);
+}
+.project-full.hidden {
+  display: none;
+}
+.project-full:hover {
+  border-color: rgba(224,85,138,0.25);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+}
+.project-full.featured {
+  border-color: rgba(224,85,138,0.3);
+  box-shadow: var(--glow);
+  background: linear-gradient(135deg, var(--surface), rgba(138,63,160,0.1));
+}
+.project-full.placeholder {
+  opacity: 0.55;
+  border-style: dashed;
+}
+.project-full-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+.project-full-header h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0.3rem 0;
+}
+.project-year-tag {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+.project-status {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 100px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.project-status.done {
+  background: rgba(74, 222, 128, 0.1);
+  color: #4ade80;
+  border: 1px solid rgba(74, 222, 128, 0.3);
+}
+.project-status.inprogress {
+  background: rgba(224, 85, 138, 0.1);
+  color: var(--rose);
+  border: 1px solid rgba(224, 85, 138, 0.3);
+}
+.project-full-body p {
+  color: var(--text-muted);
+  font-size: 0.98rem;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+.project-full-body p strong { color: var(--text); }
+.project-details {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.detail-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.detail-val {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+.placeholder-text {
+  font-style: italic;
+}
+
+/* ---- CTA ---- */
+.projects-cta {
+  padding: 6rem 0;
+  background: var(--bg3);
+  border-top: 1px solid var(--border);
+}
+.cta-inner {
+  max-width: 600px;
+}
+.cta-inner h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.cta-inner p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+  line-height: 1.75;
+}
+.cta-btns {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 640px) {
+  .project-full { padding: 1.8rem 1.4rem; }
+  .project-full-header { flex-direction: column; }
+  .project-details { flex-direction: column; gap: 1rem; }
+}
+
+
+
+#cgj, #billard, #portfolio {
+  scroll-margin-top: 250px; /* hauteur de ta nav + un peu d'espace */
+}
