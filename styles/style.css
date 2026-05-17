@@ -512,6 +512,10 @@ img { max-width: 100%; display: block; }
 /* ---- PROJECTS PREVIEW ---- */
 .projects-preview {
   padding: 7rem 0;
+  background: var(--bg3);
+}
+.selection-preview {
+  padding: 7rem 0;
   background: var(--bg2);
 }
 .projects-header {
@@ -528,8 +532,13 @@ img { max-width: 100%; display: block; }
   grid-template-columns: 1.4fr 1fr 1fr;
   gap: 1.5rem;
 }
+.selection-grid{
+  display: grid;
+  grid-template-columns: 1.4fr 1.4fr 1fr;
+  gap: 2rem;
+}
 .project-card {
-  background: var(--surface);
+  background: var(--bg);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 1.8rem;
@@ -537,6 +546,7 @@ img { max-width: 100%; display: block; }
   position: relative;
   overflow: hidden;
 }
+
 .project-card::before {
   content: '';
   position: absolute;
@@ -607,7 +617,7 @@ img { max-width: 100%; display: block; }
 /* ---- ENGAGEMENTS ---- */
 .engagements {
   padding: 7rem 0;
-  background: var(--bg1);
+  background: var(--bg);
 }
 
 
@@ -639,7 +649,7 @@ img { max-width: 100%; display: block; }
 /* ---- CV SECTION ---- */
 .cv-section {
   padding: 5rem 0;
-  background: var(--bg1);
+  background: var(--bg);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
@@ -753,6 +763,7 @@ img { max-width: 100%; display: block; }
 @media (max-width: 1024px) {
   .skills-grid { grid-template-columns: 1fr 1fr; }
   .projects-grid { grid-template-columns: 1fr 1fr; }
+  .selection-grid { grid-template-columns: 1.2fr 1.2fr; }
   .hobbies-grid { grid-template-columns: repeat(2, 1fr); }
   .about-grid { grid-template-columns: 1fr; }
   .about-card { position: static; }
@@ -775,6 +786,7 @@ img { max-width: 100%; display: block; }
   .burger { display: flex; }
   .skills-grid { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
+  .selection-grid { grid-template-columns: 1.2fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .hobbies-grid { grid-template-columns: 1fr 1fr; }
   .hero { padding: 7rem 1.5rem 4rem; }
@@ -790,7 +802,7 @@ img { max-width: 100%; display: block; }
   display: flex;
   gap: 3rem;
   align-items: flex-start;
-  background: var(--bg3);
+  background: var(--bg2);
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 2.5rem;

@@ -76,6 +76,15 @@ if (filterBtns.length > 0) {
   });
 }
 
+// ---- FILTRE AUTO DEPUIS URL ----
+const params = new URLSearchParams(window.location.search);
+const filterParam = params.get('filter');
+
+if (filterParam && filterBtns.length > 0) {
+  const targetBtn = document.querySelector(`[data-filter="${filterParam}"]`);
+  if (targetBtn) targetBtn.click(); // simule un clic sur le bon bouton
+}
+
 // ---- ACTIVE NAV LINK ----
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 document.querySelectorAll('.nav-links a').forEach(link => {
