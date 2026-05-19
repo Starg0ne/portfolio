@@ -140,6 +140,11 @@ Dernière update : 16/05/2026
   color: var(--rose);
   border: 1px solid rgba(224, 85, 138, 0.3);
 }
+.project-status.prevu {
+  background: rgba(224, 85, 138, 0.1);
+  color: #ccca3f;
+  border: 1px solid rgb(141, 111, 11);
+}
 .project-full-body p {
   color: var(--text-muted);
   font-size: 0.98rem;
