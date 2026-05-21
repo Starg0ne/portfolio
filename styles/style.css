@@ -184,10 +184,9 @@ img { max-width: 100%; display: block; }
   transition: all var(--transition);
   font-size: 0.95rem;
 }
-.btn-ghost:hover {
+.btn-ghost:hover , .hero-socials a:hover, .carousel-item:hover{
   border-color: var(--accent);
   color: var(--accent);
-  transform: translateY(-2px);
 }
 
 /* ---- SECTION LABEL ---- */
@@ -314,9 +313,7 @@ img { max-width: 100%; display: block; }
   transition: all var(--transition);
 }
 .hero-socials a svg { width: 18px; height: 18px; }
-.hero-socials a:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+.btn-ghost:hover , .hero-socials a:hover {
   transform: translateY(-3px);
 }
 .scroll-hint {
@@ -888,4 +885,36 @@ img { max-width: 100%; display: block; }
 }
 #cv {
   scroll-margin-top: 250px;
+}
+
+
+
+/* ---- CARROUSEL PROJETS ---- */
+.projects-carousel-wrapper {
+  margin-top: 2rem;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+.projects-carousel {
+  display: flex;
+  gap: 1rem;
+  animation: carouselScroll 20s linear infinite;
+  width: max-content;
+}
+.projects-carousel:hover { animation-play-state: paused; }
+@keyframes carouselScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.carousel-item {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.78rem;
+  padding: 0.5rem 1.2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  transition: all var(--transition);
+  flex-shrink: 0;
 }

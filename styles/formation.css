@@ -204,10 +204,6 @@ Dernière update : 16/05/2026
   color: var(--accent);
   flex-shrink: 0;
 }
-.certif-score span {
-  font-size: 1rem;
-  color: var(--text-dim);
-}
 
 /* ---- RÉFÉRENT ---- */
 .referent-block p {
