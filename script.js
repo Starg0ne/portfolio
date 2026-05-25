@@ -111,3 +111,25 @@ if (window.innerWidth > 768) {
     glow.style.top = e.clientY + 'px';
   });
 }
+
+// ---- THEME TOGGLE ----
+const toggle = document.getElementById('theme-toggle');
+
+const themes = ['dark', 'medium', 'light'];
+const icons  = { dark: '🌙', medium: '🌗', light: '☀️' };
+
+// Restaurer le thème sauvegardé
+const savedTheme = localStorage.getItem('theme') || 'dark';
+document.documentElement.setAttribute('data-theme', savedTheme);
+if (toggle) toggle.textContent = icons[savedTheme];
+
+if (toggle) {
+  toggle.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme') || 'dark';
+    const next = themes[(themes.indexOf(current) + 1) % themes.length];
+
+    document.documentElement.setAttribute('data-theme', next);
+    toggle.textContent = icons[next];
+    localStorage.setItem('theme', next);
+  });
+}

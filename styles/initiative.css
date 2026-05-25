@@ -24,31 +24,16 @@ Dernière update : 16/05/2026
 }
 .banner-dot {
   width: 10px; height: 10px;
-  background: #4ade80;
+  background: var(--lightgreen);
   border-radius: 50%;
   flex-shrink: 0;
   animation: pulse 2s infinite;
-  box-shadow: 0 0 12px rgba(74, 222, 128, 0.5);
+  box-shadow: 0 0 12px var(--lightgreen);
 }
 .banner-inner strong { display: block; font-size: 1rem; font-weight: 700; margin-bottom: 0.2rem; }
 .banner-inner p { font-size: 0.82rem; color: var(--text-muted); font-family: 'Space Mono', monospace; }
 .banner-inner .btn-primary { margin-left: auto; flex-shrink: 0; }
 
-/* ---- PAGE HERO ---- */
-.page-hero {
-  padding: 9rem 0 5rem;
-  position: relative;
-  overflow: hidden;
-  background: var(--bg);
-}
-.page-hero-bg { position: absolute; inset: 0; z-index: 0; }
-.page-hero .container { position: relative; z-index: 1; }
-.page-hero-sub {
-  max-width: 580px;
-  color: var(--text-muted);
-  font-size: 1.05rem;
-  margin-top: -0.5rem;
-}
 
 /* ---- INITIATIVE SECTION ---- */
 .initiative-section {
@@ -138,12 +123,11 @@ Dernière update : 16/05/2026
   width: 100%;
   border-radius: 12px;
   border: 1px solid var(--border);
-  box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 40px var(--black);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .certif-img:hover {
   transform: scale(1.02);
-  box-shadow: 0 12px 50px rgba(224, 85, 138, 0.2);
 }
 
 /* ---- RESPONSIVE ---- */

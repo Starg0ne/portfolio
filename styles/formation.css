@@ -13,30 +13,6 @@ Dernière update : 16/05/2026
   background: var(--bg);
 }
 
-
-/* ---- HERO ---- */
-.page-hero {
-  padding: 9rem 0 5rem;
-  position: relative;
-  overflow: hidden;
-  background: var(--bg);
-}
-.page-hero-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
-.page-hero .container {
-  position: relative;
-  z-index: 1;
-}
-.page-hero-sub {
-  max-width: 580px;
-  color: var(--text-muted);
-  font-size: 1.05rem;
-  margin-top: -0.5rem;
-}
-
 /* ---- ALTERNANCE BANNER ---- */
 .alternance-banner {
   background: var(--bg3);
@@ -52,11 +28,11 @@ Dernière update : 16/05/2026
 }
 .banner-dot {
   width: 10px; height: 10px;
-  background: #4ade80;
+  background: var(--lightgreen);
   border-radius: 50%;
   flex-shrink: 0;
   animation: pulse 2s infinite;
-  box-shadow: 0 0 12px rgba(74, 222, 128, 0.5);
+  box-shadow: 0 0 12px var(--lightgreen);
 }
 .banner-inner strong {
   display: block;
@@ -117,7 +93,7 @@ Dernière update : 16/05/2026
 .tl-dot.active {
   background: var(--accent);
   border-color: var(--accent);
-  box-shadow: 0 0 14px rgba(224,85,138,0.6);
+  box-shadow: 0 0 14px var(--rosebis);
   animation: pulse 2s infinite;
 }
 .timeline-item.future .tl-dot {
@@ -141,9 +117,9 @@ Dernière update : 16/05/2026
   flex-wrap: wrap;
 }
 .badge-current {
-  background: rgba(224,85,138,0.15);
+  background: var(--accentbis);
   color: var(--rose);
-  border: 1px solid rgba(224,85,138,0.3);
+  border: 1px solid var(--accentopa);
   padding: 0.15rem 0.5rem;
   border-radius: 100px;
   font-size: 0.65rem;
