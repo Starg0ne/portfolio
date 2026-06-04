@@ -10,8 +10,6 @@ Dernière update : 16/05/2026
   - DRY                                                                                                                                                  
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
-
 /* ---- VARIABLES ---- */
 :root {
   --bg:        #0d0b10;
@@ -44,30 +42,33 @@ Dernière update : 16/05/2026
 }
 
 [data-theme="medium"] {
-  --bg:        #f5f0ff;
-  --bg2:       #ede6ff;
-  --bg3:       #e5dbff;
-  --surface:   #ffffff;
+  --bg:        #f5f0e8;
+  --bg2:       #ede6d8;
+  --bg3:       #e5dbc8;
+  --bggopa:    #f5f0e8d9;
+  --surface:   #faf7f2;
   --border:    rgba(0,0,0,0.10);
-  --text:      #1a1025;
-  --textbis:   #0d0b10;
-  --text-muted:#6b5b80;
-  --text-dim:  #9a8aaa;
+  --text:      #2a1f10;
+  --textbis:   #1a1008;
+  --text-muted:#7a6a50;
+  --text-dim:  #a89878;
+  --glow:      0 0 40px rgba(224, 85, 138, 0.12);
   --blackopa:  #00000008;
-  --glow:      0 0 40px rgba(224, 85, 138, 0.15);
-  --transition: 0.3s cubic-bezier(0.4, 0, 0, 1);
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 [data-theme="light"] {
   --bg:        #f5f0ff;
   --bg2:       #ede6ff;
   --bg3:       #e5dbff;
+  --bggopa:    #f5f0ff;
   --surface:   #ffffff;
   --border:    rgba(0,0,0,0.10);
   --text:      #1a1025;
   --textbis:   #0d0b10;
   --text-muted:#6b5b80;
   --text-dim:  #9a8aaa;
+  --glow:      0 0 40px rgba(224, 85, 138, 0.12);
   --blackopa:  #00000008;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -234,6 +235,8 @@ img { max-width: 100%; display: block; }
   cursor: pointer;
   transition: all var(--transition);
   font-size: 0.95rem;
+  margin-top: 20px;
+  margin-left: 5px;
 }
 .btn-ghost:hover , .hero-socials a:hover, .carousel-item:hover{
   border-color: var(--accent);
@@ -944,12 +947,17 @@ img { max-width: 100%; display: block; }
   padding: 0.3rem 0.7rem;
   border-radius: 100px;
 }
-.intl-link {
+.intl-btn {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+.intl-link, .intl-btn {
   font-size: 0.88rem;
   font-weight: 700;
   color: var(--accent);
 }
-.intl-link:hover {
+.intl-link:hover, .intl-btn:hover {
   text-decoration: underline;
 }
 /* responsive */
@@ -993,4 +1001,22 @@ img { max-width: 100%; display: block; }
   white-space: nowrap;
   transition: all var(--transition);
   flex-shrink: 0;
+}
+
+#diplome-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+
+#diplome-modal img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 8px;
+  cursor: default;
 }

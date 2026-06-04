@@ -133,3 +133,14 @@ if (toggle) {
     localStorage.setItem('theme', next);
   });
 }
+
+// Fermer le Diplôme si ouvert avec touche Echap ou si scroll
+const modal = document.getElementById('diplome-modal');
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') modal.style.display = 'none';
+});
+
+//window.addEventListener('scroll', () => {
+//  document.getElementById('diplome-modal').style.display = 'none';
+//}, { passive: true });

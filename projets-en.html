@@ -9,13 +9,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="My projects — Bastien Ham — award-winning 2D billiards game, Code Game Jam prototype, GitHub Pages portfolio and more." />
+  <meta name="description" content="My projects - Bastien Ham - award-winning 2D billiards game, Code Game Jam prototype, GitHub Pages portfolio and more." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects — Bastien Ham</title>
+  <title>Projects - Bastien Ham</title>
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="stylesheet" href="styles/style.css" />
   <link rel="stylesheet" href="styles/projets.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
 </head>
 <body>
 
@@ -32,7 +31,7 @@
     <ul class="nav-btn">
     <li><button id="theme-toggle" class="btn-nav btn-lang">🌙</button></li>
     <li><a href="projets.html" class="btn-nav btn-lang">FR</a></li>
-    <li><a href="index-en.html#cv" class="btn-nav btn-cv">CV</a></li>
+    <li><a href="assets/CV_Ham_Bastien_Alternance.pdf" class="btn-nav btn-cv download">CV</a></li>
     <li><button class="burger" id="burger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button></li>
@@ -49,7 +48,7 @@
       <p class="section-label reveal">/ Projects</p>
       <h1 class="section-title reveal">My <span class="accent">projects</span></h1>
       <p class="page-hero-sub reveal">
-        Course projects, competitions, personal stuff — everything I've put my hands on.
+        Course projects, competitions, personal stuff - everything I've put my hands on.
       </p>
     </div>
   </section>
@@ -76,14 +75,14 @@
       <article class="project-full" data-cat="web perso" id="portfolio">
         <div class="project-full-header">
           <div>
-            <h2>Portfolio — GitHub Pages</h2>
+            <h2>Portfolio - GitHub Pages</h2>
             <div class="project-year-tag">2026 · Personal project</div>
           </div>
           <div class="project-status inprogress">In progress</div>
         </div>
         <div class="project-full-body">
           <p>
-            This portfolio — designed and coded in HTML/CSS/JS.
+            This portfolio - designed and coded in HTML/CSS/JS.
             Responsive design, CSS animations, multi-page.
             Hosted on GitHub Pages.
           </p>
@@ -107,7 +106,7 @@
       </article>
 
       <!-- Billard Ultimate V2 -->
-
+      <!--
       <article class="project-full" data-cat="jeu perso" id="billardV2">
         <div class="project-full-header">
           <div>
@@ -141,12 +140,13 @@
           </a>
         </div>
       </article>
+      -->
 
       <!-- CODE GAME JAM -->
       <article class="project-full" data-cat="jeu perso" id="cgj">
         <div class="project-full-header">
           <div>
-            <h2>Game Prototype — Code Game Jam</h2>
+            <h2>Game Prototype - Code Game Jam</h2>
             <div class="project-year-tag">2026 · IUT d'Orsay</div>
           </div>
           <div class="project-status done">Completed</div>
@@ -223,7 +223,7 @@
         </div>
         <div class="project-full-body">
           <p>
-            Developed in Python with Pygame as part of the national <strong>NSI Trophies</strong> competition —
+            Developed in Python with Pygame as part of the national <strong>NSI Trophies</strong> competition -
             high school level. Team project: graphical interface design, display system and
             implementation of collision and bounce physics for realistic, smooth gameplay.
           </p>
@@ -265,7 +265,7 @@
         </div>
         <div class="project-full-body">
           <p>
-            <strong>Excellence</strong> award received at the <strong>2024 NSI Academic Olympiad</strong> — 
+            <strong>Excellence</strong> award received at the <strong>2024 NSI Academic Olympiad</strong> - 
             an academic competition organized by the Académie de Versailles.
           </p>
           <div class="project-details">
@@ -275,11 +275,14 @@
             </div>
             <div class="detail-item">
               <span class="detail-label">Level</span>
-              <span class="detail-val">Academic — Académie de Versailles</span>
+              <span class="detail-val">Academic - Académie de Versailles</span>
             </div>
           </div>
-          <!--<a href="https://sciences-informatiques.ac-versailles.fr/IMG/pdf/palmares_des_olympiades_academiques_de_nsi.pdf" target="_blank" class="btn-ghost">
-            Palmarès officiel → -->
+          <button onclick="document.getElementById('diplome-modal').style.display='flex'" class="btn-ghost">
+            See the certificate
+          </button>
+          <a href="https://sciences-informatiques.ac-versailles.fr/IMG/pdf/palmares_des_olympiades_academiques_de_nsi.pdf" target="_blank" class="btn-ghost">
+            Official rankings →
           </a>
         </div>
       </article>
@@ -292,7 +295,7 @@
     <div class="container">
       <div class="cta-inner">
         <h2>Got a <span class="accent">project?</span></h2>
-        <p>I'm looking for a work-study contract starting September 2026. If you're looking for someone motivated, curious and who picks things up fast — let's talk.</p>
+        <p>I'm looking for a work-study contract starting September 2026. If you're looking for someone motivated, curious and who picks things up fast - let's talk.</p>
         <div class="cta-btns">
           <a href="index-en.html#contact" class="btn-primary">Contact me</a>
           <a href="https://github.com/Starg0ne" target="_blank" class="btn-ghost">My GitHub</a>
@@ -312,6 +315,14 @@
       </div>
     </div>
   </footer>
+
+
+  <!-- Diplôme -->
+  <div id="diplome-modal" onclick="this.style.display='none'">
+    <img 
+      src="assets/Diplôme Olympiades Académiques de NSI.png" 
+      onclick="event.stopPropagation()">
+  </div>
 
   <script src="script.js"></script>
 </body>
