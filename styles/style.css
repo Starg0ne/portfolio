@@ -215,6 +215,7 @@ img { max-width: 100%; display: block; }
   transition: all var(--transition);
   font-size: 0.95rem;
   letter-spacing: 0.02em;
+  margin-top: 20px;
 }
 .btn-primary:hover {
   transform: translateY(-2px);
