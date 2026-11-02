@@ -606,7 +606,7 @@ img { max-width: 100%; display: block; }
 .projects-header .section-title { margin-bottom: 0; }
 .projects-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5rem;
 }
 .selection-grid{

@@ -9,8 +9,8 @@ Dernière update : 16/05/2026
   - DRY                                                                                                                                                  
 */
 
-/* ---- ALTERNANCE BANNER ---- */
-.alternance-banner {
+/* ---- RECHERCHE BANNER ---- */
+.recherche-banner {
   background: var(--bg3);
   border-bottom: 1px solid var(--border);
   padding: 1.5rem 0;
