@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirection...</title>
+    <script>
+        const userLang = navigator.language || navigator.userLanguage;
+        const shortLang = userLang.substring(0, 2);
+
+        if (shortLang === 'fr') {
+            window.location.replace('fr/index.html');
+        } else {
+            // Par défaut Anglais
+            window.location.replace('en/index.html');
+        }
+    </script>
+</head>
+<body>
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=en/index.html">
+    </noscript>
+    <p>Redirection en cours / Redirecting</p>
+    <p><a href="fr/index.html">Français</a> | <a href="en/index.html">English</a></p>
+</body>
+</html>
